@@ -11,6 +11,8 @@ public class playerLocomotion : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float turnSpeed;
     Vector3 input;
+    public float gravity = 9.81f;
+    public float jumpForce = 10f;
 
     void Start()
     {
@@ -22,17 +24,45 @@ public class playerLocomotion : MonoBehaviour
         gatherInput();
         setAnimation();
         Look();
+        if (IsGrounded() && Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
     }
 
     void FixedUpdate()
     {
         Move();
+        
     }
     void gatherInput()
     {
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");
         input = new Vector3(x, 0, z);
+    }
+
+    bool IsGrounded()
+    {
+        Ray ray = new Ray(transform.position, Vector3.down);
+        float rayDistance = 1f; // Adjust this based on your character's size
+        
+        if (Physics.Raycast(ray, rayDistance))
+        {
+            Debug.Log("GT");
+            return true; // Player is grounded
+        }
+        Debug.Log("GF");
+        return false; // Player is not grounded
+    }
+
+    void Jump()
+    {
+        /*if (IsGrounded())
+        {*/
+            Debug.Log("j");
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //}
     }
 
     void Move()

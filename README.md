@@ -1,0 +1,2 @@
+# Santas_Path
+ It's a 3D platformer game where the player is Santa, and his gifts, which are supposed to be delivered by tonight, got stolen by demons or thieves. The player's goal is to retrieve all the gifts from the environment. Upon collecting gifts, the demons try harder to take them back from Santa. Santa's objective is to collect all the gifts from the environment and deliver them to respective houses without getting caught by the demons.

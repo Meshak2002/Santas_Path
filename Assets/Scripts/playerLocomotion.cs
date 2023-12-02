@@ -13,11 +13,13 @@ public class playerLocomotion : MonoBehaviour
     Vector3 input;
     public float gravity = 9.81f;
     public float jumpForce = 10f;
+    private float initialY;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        initialY=transform.position.y;
     }
     private void Update()
     {
@@ -26,7 +28,10 @@ public class playerLocomotion : MonoBehaviour
         Look();
         if (IsGrounded() && Input.GetButtonDown("Jump"))
         {
-            Jump();
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Blend Tree") || animator.GetCurrentAnimatorStateInfo(0).IsName("Landing"))
+            {
+                Jump();
+            }
         }
     }
 
@@ -44,15 +49,21 @@ public class playerLocomotion : MonoBehaviour
 
     bool IsGrounded()
     {
-        Ray ray = new Ray(transform.position, Vector3.down);
-        float rayDistance = 1f; // Adjust this based on your character's size
-        
+        Vector3 pos = transform.position;
+        pos.y += .1f;
+
+        Ray ray = new Ray(pos, Vector3.down);
+        float rayDistance = .2f;
+        Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red);
+
         if (Physics.Raycast(ray, rayDistance))
         {
             Debug.Log("GT");
+            animator.SetBool("OnGrnd", true);
             return true; // Player is grounded
         }
-        Debug.Log("GF");
+        animator.SetBool("OnGrnd", false);
+        floorCheck();
         return false; // Player is not grounded
     }
 
@@ -60,6 +71,7 @@ public class playerLocomotion : MonoBehaviour
     {
         /*if (IsGrounded())
         {*/
+        animator.SetTrigger("Jump");
             Debug.Log("j");
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         //}
@@ -88,6 +100,14 @@ public class playerLocomotion : MonoBehaviour
         else
         {
             animator.SetFloat("Speed", 0);
+        }
+    }
+
+    void floorCheck()
+    {
+        if (transform.position.y < initialY-6 )
+        {
+            animator.SetTrigger("Falling");
         }
     }
 }

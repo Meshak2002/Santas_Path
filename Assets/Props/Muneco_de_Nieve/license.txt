@@ -1,0 +1,11 @@
+Model Information:
+* title:	Muñeco de Nieve
+* source:	https://sketchfab.com/3d-models/muneco-de-nieve-ff386077f677483cb74c062efb1bdee4
+* author:	Andrysqui (https://sketchfab.com/Andrysqui)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Muñeco de Nieve" (https://sketchfab.com/3d-models/muneco-de-nieve-ff386077f677483cb74c062efb1bdee4) by Andrysqui (https://sketchfab.com/Andrysqui) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

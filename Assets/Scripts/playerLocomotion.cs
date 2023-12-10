@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class playerLocomotion : MonoBehaviour
 {
-    private Animator animator;
+    [HideInInspector] public Animator animator;
     private Rigidbody rb;
     private float x;
     private float z;
     [SerializeField] private float speed;
     [SerializeField] private float turnSpeed;
-    Vector3 input;
+    [HideInInspector] public Vector3 input;
     public float gravity = 9.81f;
     public float jumpForce = 10f;
-    private float initialY;
+    [HideInInspector] public float initialY;
+    public Transform foot;
+    public static playerLocomotion instance;
+    [HideInInspector] public bool lockk;
 
+    private void Awake()
+    {
+        instance = this; 
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -26,13 +33,15 @@ public class playerLocomotion : MonoBehaviour
         gatherInput();
         setAnimation();
         Look();
-        if (IsGrounded() && Input.GetButtonDown("Jump"))
-        {
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Blend Tree") || animator.GetCurrentAnimatorStateInfo(0).IsName("Landing"))
-            {
-                Jump();
+        if (lockk== false) {
+                if (IsGrounded() && Input.GetButtonDown("Jump"))
+                {
+                    if (animator.GetCurrentAnimatorStateInfo(0).IsName("Blend Tree") || animator.GetCurrentAnimatorStateInfo(0).IsName("Landing"))
+                    {
+                        Jump();
+                    }
+                }
             }
-        }
     }
 
     void FixedUpdate()
@@ -49,16 +58,14 @@ public class playerLocomotion : MonoBehaviour
 
     bool IsGrounded()
     {
-        Vector3 pos = transform.position;
-        pos.y += .1f;
-
+        Vector3 pos = foot.position;
+       // Debug.Log("GT");
         Ray ray = new Ray(pos, Vector3.down);
-        float rayDistance = .2f;
+        float rayDistance = .6f;
         Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red);
 
         if (Physics.Raycast(ray, rayDistance))
         {
-            Debug.Log("GT");
             animator.SetBool("OnGrnd", true);
             return true; // Player is grounded
         }
@@ -72,7 +79,6 @@ public class playerLocomotion : MonoBehaviour
         /*if (IsGrounded())
         {*/
         animator.SetTrigger("Jump");
-            Debug.Log("j");
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         //}
     }
@@ -107,7 +113,7 @@ public class playerLocomotion : MonoBehaviour
     {
         if (transform.position.y < initialY-6 )
         {
-            animator.SetTrigger("Falling");
+            animator.SetBool("OnGrnd", false);
         }
     }
 }

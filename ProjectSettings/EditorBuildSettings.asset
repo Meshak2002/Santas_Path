@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AshMoor.unity
+    path: Assets/Scenes/Main.unity
     guid: 47cefbbcd41a6814992b1d2f92ec6dd0
   m_configObjects: {}

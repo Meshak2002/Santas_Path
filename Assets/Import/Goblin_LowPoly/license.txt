@@ -1,0 +1,11 @@
+Model Information:
+* title:	Goblin LowPoly
+* source:	https://sketchfab.com/3d-models/goblin-lowpoly-c456cd980d5b47aeaa8b54f70d83daf2
+* author:	KarSa (https://sketchfab.com/iamrikofly)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Goblin LowPoly" (https://sketchfab.com/3d-models/goblin-lowpoly-c456cd980d5b47aeaa8b54f70d83daf2) by KarSa (https://sketchfab.com/iamrikofly) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

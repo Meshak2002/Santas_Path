@@ -6,7 +6,7 @@ public class camerFollow : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 offset;
-    [SerializeField]private Transform target;
+    public Transform target;
     [SerializeField]private float smoothTime;
     private Vector3 curVelocity=Vector3.zero;
 

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Snow : MonoBehaviour {
 
@@ -7,12 +9,12 @@ public class Snow : MonoBehaviour {
     public Material white;
     public float updateSpeed = 100f;
 
-    private Camera cam;
+    private UnityEngine.Camera cam;
 
 	void Start () {
-        cam = GetComponent<Camera>();
+        cam = GetComponent<UnityEngine.Camera>();
         cam.depthTextureMode = DepthTextureMode.Depth;
-
+        
         //scale ortho camera with snow plane assuming it's 1:1
         cam.orthographicSize *= snowPlane.transform.localScale.x; 
     }

@@ -8,9 +8,9 @@ public class camerTransition : MonoBehaviour
     public GameObject camera;
     public Vector3 changeRotation = new Vector3(55, 45, 0);
     public Vector3 originalRotation = new Vector3(30, 45, 0);
-    public Vector3 targetRotation;
+    [HideInInspector]public Vector3 targetRotation;
     public float rotationSpeed = 2.0f;
-    private bool enter;
+    [HideInInspector] public bool enter;
     public bool switchh;
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +31,7 @@ public class camerTransition : MonoBehaviour
     {
         if (enter)
         {
+            Debug.Log("Rotate");
             Quaternion rot = Quaternion.Euler(targetRotation);
             if (Mathf.Round(camera.transform.eulerAngles.x) != Mathf.Round(rot.eulerAngles.x))
                 camera.transform.rotation = Quaternion.Slerp(camera.transform.rotation, rot, rotationSpeed * Time.deltaTime);

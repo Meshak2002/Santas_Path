@@ -1,61 +1,161 @@
 fileFormatVersion: 2
 guid: 6ad8a122058534d75a111605d13ced17
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Lowpoly_Christmas_Pack_066:group1
-    100004: Lowpoly_Christmas_Pack_066:pCube1
-    100006: Lowpoly_Christmas_Pack_066:pCube10
-    100008: Lowpoly_Christmas_Pack_066:pCube11
-    100010: Lowpoly_Christmas_Pack_066:pCube2
-    100012: Lowpoly_Christmas_Pack_066:pCube3
-    100014: Lowpoly_Christmas_Pack_066:pCube4
-    100016: Lowpoly_Christmas_Pack_066:pCube5
-    100018: Lowpoly_Christmas_Pack_066:pCube8
-    100020: Lowpoly_Christmas_Pack_066:pCube9
-    100022: Lowpoly_Christmas_Pack_066:transform1
-    100024: Lowpoly_Christmas_Pack_066:transform2
-    100026: Lowpoly_Christmas_Pack_066:transform3
-    100028: Lowpoly_Christmas_Pack_066:transform4
-    100030: Lowpoly_Christmas_Pack_066:transform5
-    100032: Lowpoly_Christmas_Pack_066:transform6
-    100034: Lowpoly_Christmas_Pack_066:transform7
-    100036: Lowpoly_Christmas_Pack_066:transform8
-    400000: //RootNode
-    400002: Lowpoly_Christmas_Pack_066:group1
-    400004: Lowpoly_Christmas_Pack_066:pCube1
-    400006: Lowpoly_Christmas_Pack_066:pCube10
-    400008: Lowpoly_Christmas_Pack_066:pCube11
-    400010: Lowpoly_Christmas_Pack_066:pCube2
-    400012: Lowpoly_Christmas_Pack_066:pCube3
-    400014: Lowpoly_Christmas_Pack_066:pCube4
-    400016: Lowpoly_Christmas_Pack_066:pCube5
-    400018: Lowpoly_Christmas_Pack_066:pCube8
-    400020: Lowpoly_Christmas_Pack_066:pCube9
-    400022: Lowpoly_Christmas_Pack_066:transform1
-    400024: Lowpoly_Christmas_Pack_066:transform2
-    400026: Lowpoly_Christmas_Pack_066:transform3
-    400028: Lowpoly_Christmas_Pack_066:transform4
-    400030: Lowpoly_Christmas_Pack_066:transform5
-    400032: Lowpoly_Christmas_Pack_066:transform6
-    400034: Lowpoly_Christmas_Pack_066:transform7
-    400036: Lowpoly_Christmas_Pack_066:transform8
-    2100000: Lowpoly_Christmas_Pack_066_phong1
-    2100002: Lowpoly_Christmas_Pack_066_phong5
-    2100004: Lowpoly_Christmas_Pack_066_phong3
-    2100006: Lowpoly_Christmas_Pack_066_phong6
-    2100008: Lowpoly_Christmas_Pack_066_phong2
-    2100010: Lowpoly_Christmas_Pack_066_phong4
-    2100012: Lowpoly_Christmas_Pack_066_phong8
-    2100014: Lowpoly_Christmas_Pack_066_phong7
-    2300000: Lowpoly_Christmas_Pack_066:pCube11
-    3300000: Lowpoly_Christmas_Pack_066:pCube11
-    4300000: Lowpoly_Christmas_Pack_066:pCube11
-    6400000: Lowpoly_Christmas_Pack_066:pCube11
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Lowpoly_Christmas_Pack_066:group1
+  - first:
+      1: 100004
+    second: Lowpoly_Christmas_Pack_066:pCube1
+  - first:
+      1: 100006
+    second: Lowpoly_Christmas_Pack_066:pCube10
+  - first:
+      1: 100008
+    second: Lowpoly_Christmas_Pack_066:pCube11
+  - first:
+      1: 100010
+    second: Lowpoly_Christmas_Pack_066:pCube2
+  - first:
+      1: 100012
+    second: Lowpoly_Christmas_Pack_066:pCube3
+  - first:
+      1: 100014
+    second: Lowpoly_Christmas_Pack_066:pCube4
+  - first:
+      1: 100016
+    second: Lowpoly_Christmas_Pack_066:pCube5
+  - first:
+      1: 100018
+    second: Lowpoly_Christmas_Pack_066:pCube8
+  - first:
+      1: 100020
+    second: Lowpoly_Christmas_Pack_066:pCube9
+  - first:
+      1: 100022
+    second: Lowpoly_Christmas_Pack_066:transform1
+  - first:
+      1: 100024
+    second: Lowpoly_Christmas_Pack_066:transform2
+  - first:
+      1: 100026
+    second: Lowpoly_Christmas_Pack_066:transform3
+  - first:
+      1: 100028
+    second: Lowpoly_Christmas_Pack_066:transform4
+  - first:
+      1: 100030
+    second: Lowpoly_Christmas_Pack_066:transform5
+  - first:
+      1: 100032
+    second: Lowpoly_Christmas_Pack_066:transform6
+  - first:
+      1: 100034
+    second: Lowpoly_Christmas_Pack_066:transform7
+  - first:
+      1: 100036
+    second: Lowpoly_Christmas_Pack_066:transform8
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Lowpoly_Christmas_Pack_066:group1
+  - first:
+      4: 400004
+    second: Lowpoly_Christmas_Pack_066:pCube1
+  - first:
+      4: 400006
+    second: Lowpoly_Christmas_Pack_066:pCube10
+  - first:
+      4: 400008
+    second: Lowpoly_Christmas_Pack_066:pCube11
+  - first:
+      4: 400010
+    second: Lowpoly_Christmas_Pack_066:pCube2
+  - first:
+      4: 400012
+    second: Lowpoly_Christmas_Pack_066:pCube3
+  - first:
+      4: 400014
+    second: Lowpoly_Christmas_Pack_066:pCube4
+  - first:
+      4: 400016
+    second: Lowpoly_Christmas_Pack_066:pCube5
+  - first:
+      4: 400018
+    second: Lowpoly_Christmas_Pack_066:pCube8
+  - first:
+      4: 400020
+    second: Lowpoly_Christmas_Pack_066:pCube9
+  - first:
+      4: 400022
+    second: Lowpoly_Christmas_Pack_066:transform1
+  - first:
+      4: 400024
+    second: Lowpoly_Christmas_Pack_066:transform2
+  - first:
+      4: 400026
+    second: Lowpoly_Christmas_Pack_066:transform3
+  - first:
+      4: 400028
+    second: Lowpoly_Christmas_Pack_066:transform4
+  - first:
+      4: 400030
+    second: Lowpoly_Christmas_Pack_066:transform5
+  - first:
+      4: 400032
+    second: Lowpoly_Christmas_Pack_066:transform6
+  - first:
+      4: 400034
+    second: Lowpoly_Christmas_Pack_066:transform7
+  - first:
+      4: 400036
+    second: Lowpoly_Christmas_Pack_066:transform8
+  - first:
+      21: 2100000
+    second: Lowpoly_Christmas_Pack_066_phong1
+  - first:
+      21: 2100002
+    second: Lowpoly_Christmas_Pack_066_phong5
+  - first:
+      21: 2100004
+    second: Lowpoly_Christmas_Pack_066_phong3
+  - first:
+      21: 2100006
+    second: Lowpoly_Christmas_Pack_066_phong6
+  - first:
+      21: 2100008
+    second: Lowpoly_Christmas_Pack_066_phong2
+  - first:
+      21: 2100010
+    second: Lowpoly_Christmas_Pack_066_phong4
+  - first:
+      21: 2100012
+    second: Lowpoly_Christmas_Pack_066_phong8
+  - first:
+      21: 2100014
+    second: Lowpoly_Christmas_Pack_066_phong7
+  - first:
+      23: 2300000
+    second: Lowpoly_Christmas_Pack_066:pCube11
+  - first:
+      33: 3300000
+    second: Lowpoly_Christmas_Pack_066:pCube11
+  - first:
+      43: 4300000
+    second: Lowpoly_Christmas_Pack_066:pCube11
+  - first:
+      64: 6400000
+    second: Lowpoly_Christmas_Pack_066:pCube11
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -64,6 +164,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -85,28 +186,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 1
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -115,10 +227,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -128,13 +240,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

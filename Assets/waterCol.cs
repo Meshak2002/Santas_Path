@@ -6,6 +6,10 @@ public class waterCol : MonoBehaviour
 {
     // Start is called before the first frame update
     public camerFollow cf;
+    public Transform player;
+    public GameObject splashFX;
+    private CapsuleCollider cc;
+    private playerLocomotion pl;
     void Start()
     {
         
@@ -20,8 +24,22 @@ public class waterCol : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            StartCoroutine(waii());
+            cc = other.gameObject.GetComponent<CapsuleCollider>();
+            cc.enabled = false;
+            pl = other.gameObject.GetComponent<playerLocomotion>();
+            pl.enabled = false;
             cf.target = this.transform;
         }
+    }
+    IEnumerator waii()
+    {
+        yield return new WaitForSeconds(.2f);
+        GameObject FX = Instantiate(splashFX, this.transform);
+        yield return new WaitForSeconds(2f);
+        cc.enabled = true;
+        pl.enabled = true;
+        cf.target = player;
+        pl.Revive();
     }
 }

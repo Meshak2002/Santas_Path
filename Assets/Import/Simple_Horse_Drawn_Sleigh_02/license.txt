@@ -1,0 +1,11 @@
+Model Information:
+* title:	Simple Horse Drawn Sleigh 02
+* source:	https://sketchfab.com/3d-models/simple-horse-drawn-sleigh-02-00d55993716c4dfebcf97b7b40c8801a
+* author:	gogiart (https://sketchfab.com/agt14032013)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Simple Horse Drawn Sleigh 02" (https://sketchfab.com/3d-models/simple-horse-drawn-sleigh-02-00d55993716c4dfebcf97b7b40c8801a) by gogiart (https://sketchfab.com/agt14032013) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	AU-77975_band
+* source:	https://sketchfab.com/3d-models/au-77975-band-4756613bfa934f46a1cdf899087dc52d
+* author:	automicgold (https://sketchfab.com/automicgoldapril)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AU-77975_band" (https://sketchfab.com/3d-models/au-77975-band-4756613bfa934f46a1cdf899087dc52d) by automicgold (https://sketchfab.com/automicgoldapril) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

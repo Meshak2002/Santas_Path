@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Windows;
 
 public class pushBall : MonoBehaviour
 {
@@ -52,6 +49,7 @@ public class pushBall : MonoBehaviour
         if (other.transform.tag == "iceBall" && !grab)
         {
             
+            grab = true;
            // Debug.Log("Ball");
             sphereCollider= other.GetComponent<SphereCollider>();
             sphereCollider.enabled = false;
@@ -69,7 +67,7 @@ public class pushBall : MonoBehaviour
             pBall.GetComponent<CapsuleCollider>().enabled = true;
             oBall.localPosition = Vector3.zero;
             oBall.localRotation=Quaternion.identity;
-            targetSize = pBall.transform.localScale + new Vector3(9,9,9);
+            targetSize = pBall.transform.localScale + new Vector3(11,11,11);
 
 
             hold = true;
@@ -83,7 +81,7 @@ public class pushBall : MonoBehaviour
 
     public void Reset()
     {
-        targetSize = pBall.transform.localScale - new Vector3(8, 8, 8);
+        targetSize = pBall.transform.localScale - new Vector3(10, 10, 10);
         pBall.transform.localScale = targetSize;
     }
 }

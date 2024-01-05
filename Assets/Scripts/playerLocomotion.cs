@@ -17,6 +17,7 @@ public class playerLocomotion : MonoBehaviour
     public Transform foot;
     public static playerLocomotion instance;
     [HideInInspector] public bool lockk;
+    Vector3 initPos;
 
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class playerLocomotion : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         initialY=transform.position.y;
+        initPos = this.transform.position;
     }
     private void Update()
     {
@@ -53,7 +55,19 @@ public class playerLocomotion : MonoBehaviour
     {
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");
-        input = new Vector3(x, 0, z);
+        RigidbodyConstraints rc;
+        if (x==0 && z == 0)
+        {
+             rc = RigidbodyConstraints.FreezeRotation;
+        }
+        else
+        {
+             rc = ~RigidbodyConstraints.FreezeRotationY;
+             rc = ~RigidbodyConstraints.FreezePosition;
+
+        }
+        rb.constraints = rc;
+       input = new Vector3(x, 0, z);
     }
 
     bool IsGrounded()
@@ -115,6 +129,11 @@ public class playerLocomotion : MonoBehaviour
         {
             animator.SetBool("OnGrnd", false);
         }
+    }
+
+    public void Revive()
+    {
+        this.transform.position = initPos;
     }
 }
 

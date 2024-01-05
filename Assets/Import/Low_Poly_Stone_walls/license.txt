@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Stone walls
+* source:	https://sketchfab.com/3d-models/low-poly-stone-walls-3e71a31454664216b1284056639106f6
+* author:	AkuVai (https://sketchfab.com/AkuVai)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Stone walls" (https://sketchfab.com/3d-models/low-poly-stone-walls-3e71a31454664216b1284056639106f6) by AkuVai (https://sketchfab.com/AkuVai) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
